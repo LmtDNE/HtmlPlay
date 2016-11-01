@@ -1,0 +1,32 @@
+:root {
+  font-size: 35px; 
+  background:  #0C3947;
+}
+body {
+  background: radial-gradient(#22A9D3,#187694,#0C3947);
+}
+header{
+  position: relative;
+  height: 200px;
+  background: white;
+  line-height: 200px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+header h1{
+  text-align: center;
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+}
+
+table, th, td{
+  border: 1px solid blue;
+}
+
+table td{
+  padding: 15px;
+}
