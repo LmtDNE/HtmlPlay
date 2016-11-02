@@ -1,32 +1,165 @@
-:root {
-  font-size: 35px; 
-  background:  #0C3947;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 body {
-  background: radial-gradient(#22A9D3,#187694,#0C3947);
+  line-height: 1;
 }
-header{
-  position: relative;
-  height: 200px;
-  background: white;
-  line-height: 200px;
-  text-align: center;
-  margin-bottom: 120px;
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-header h1{
+/*=====================================================================================================================================*/
+
+/*STYLING*/
+
+/*=====================================================================================================================================*/
+
+:root {
+  font-size: 35px; 
+}
+body {
+  background: radial-gradient(#22A9D3,#187694,#0C3947) ;
+  height: 100vh;
+}
+div.main {
+  position: relative;
+  font-size: .75rem;
+}
+section.first-fragment {
+  height: 400px;
+  width: 100%;
+}
+
+header{
+  height: 125px;
+  width: 100%;
+  background: white;
+  line-height: 150px;
   text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  border-bottom: 5px solid orange;
+}
+
+header h1 {
+  margin-top: 0px;
+}
+
+aside.table-container {
+  float: left;
+  margin-left: 20px;
+
 }
 
 table {
   text-align: center;
-  margin: 0 auto;
+  background-color: white;
+}
+
+table thead {
+  font-size: 1rem;
+  font-style: underline;
+  font-weight: bold;
 }
 
 table, th, td{
+  padding: 15px;
+  border: 1px solid blue;
+}
+table td {
+  font-size: .70rem;
+}
+
+article.info-paragraph {
+  float: right;
+  width: 50%;
+  height: 420px;
+  background-color: white;
+  padding: 15px;
+  margin-right: 20px;
   border: 1px solid blue;
 }
 
-table td{
-  padding: 15px;
+article h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
+article p {
+  font-size: .5rem;
+}
+
+section.second-fragment {
+  display: block;
+  /*height: 400px;*/
+  width: 100%;
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+  margin-top: 100px;
+}
+div.fun-form{
+  text-align: center;
+  margin-bottom: 50px;
+}
+form input {
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form button {
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
