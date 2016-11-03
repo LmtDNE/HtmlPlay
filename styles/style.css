@@ -176,7 +176,13 @@ li [data-tooltip="true"]:hover:before{
 }
 
 li [data-tooltip="true"]:hover:after{
-  /*position: relative;*/
+  content: "";
+  position: absolute;
+  height:0;
+  width: 0;
+  border: 20px solid transparent;
+  border-bottom-color: orange;
+  left: 10px;
 
 }
 
