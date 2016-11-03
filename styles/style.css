@@ -59,6 +59,7 @@ div.main {
   position: relative;
   font-size: .75rem;
 }
+
 section.first-fragment {
   height: 400px;
   width: 100%;
@@ -126,10 +127,8 @@ article p {
 
 section.second-fragment {
   display: block;
-  /*height: 400px;*/
   width: 100%;
   border-top: 5px solid orange;
-  border-bottom: 5px solid orange;
   margin-top: 100px;
 }
 div.fun-form{
@@ -150,7 +149,59 @@ form button {
 
 }
 
+section.third-fragment {
+  display: block;
+  width: 100%;
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
 
+li [data-tooltip="true"]:hover{
+  position: relative;
+  z-index: 1
+}
+
+li [data-tooltip="true"]:hover:before{
+  content: attr(title);
+  position: absolute;
+  background-color: orange;
+  color: white;
+  top: 1rem;
+  width: 10rem;
+  border-radius: 20px;
+  padding: 5px 10px;
+
+}
+
+li [data-tooltip="true"]:hover:after{
+  /*position: relative;*/
+
+}
+
+section.fourth-fragment {
+  display: block;
+  width: 100%;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+section.fifth-fragment {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+section.sixth-fragment {
+  display: block;
+  width: 100%;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
 
 
 
