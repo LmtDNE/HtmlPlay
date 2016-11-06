@@ -157,6 +157,9 @@ section.third-fragment {
   text-align: center;
   /*margin-top: 100px;*/
 }
+div.link-container {
+  margin-bottom: 50px;
+}
 
 li [data-tooltip="true"]:hover{
   position: relative;
@@ -207,6 +210,65 @@ section.sixth-fragment {
   border-bottom: 5px solid orange;
   text-align: center;
   /*margin-top: 100px;*/
+}
+section.seventh-fragment {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+div.progress-container {
+  width: 100%
+}
+.progress-bar{
+  counter-reset: step;
+}
+.progress-bar li {
+  list-style-type: none;
+  float: left;
+  width: 33.3%;
+  position: relative;
+  text-align: center;
+}
+.progress-bar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  border: 1px solid orange;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  line-height: 30px;
+  background-color: white;
+}
+.progress-bar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: orange;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progress-bar li:first-child:after {
+  content: none;
+}
+
+li.active {
+  color: #DD1B8B;
+}
+
+li.active:before {
+  border-color: #DD1B8B;
+}
+
+.progress-bar li.active + li:after {
+  background-color: #DD1B8B;
 }
 
 
