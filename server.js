@@ -3,8 +3,6 @@ var path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
 
-var mPKey = "c3f554ea29d5a46ceb7c3b084bbd0514";
-var mPrKey = "b52d783b332612f511c4a721036c864a26d13ac9";
 
 
 app.use(bodyParser.urlencoded({extended : true}));
