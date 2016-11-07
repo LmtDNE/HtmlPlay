@@ -1,0 +1,24 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "Sandbox",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LmtDNE/HtmlPlay.git"
+  },
+  "author": "Dion Fulwood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LmtDNE/HtmlPlay/issues"
+  },
+  "homepage": "https://github.com/LmtDNE/HtmlPlay#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
