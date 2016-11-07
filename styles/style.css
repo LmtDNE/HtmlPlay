@@ -271,7 +271,67 @@ li.active:before {
   background-color: #DD1B8B;
 }
 
+div.bar {
+  position: relative;
+  width: 50%;
+  background-color: #EEE;
+  border-radius: 10px;
+  box-shadow:inset 0px 1px 5px;
+  padding: 5px;
+  margin: 175px auto 10px auto;
 
+}
+span.bar-fill {
+  height: 30px;
+  display: block;
+  border-radius: 10px;
+  width: 45%;
+  background: orange;
+
+  -webkit-transition: width 0.8s ease;
+  transition: width 0.8s ease;
+}
+
+section.eigth-fragment {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 700px;
+  border-bottom: 5px solid orange;
+  /*text-align: center;*/
+  /*margin-top: 100px;*/
+}
+aside.img-list {
+  position: absolute;
+  float: left;
+  width: 275px;
+  height: 565px;
+  top: 130px;
+  border-right: 5px solid orange;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 10px; 
+  overflow: scroll;
+}
+
+div.main-container {
+  float: right;
+  margin-right: 75px;
+}
+
+div #img-container1, div #img-container2, div #img-container3 {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border: 5px solid orange;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+img {
+  height: 250px;
+  width: 250px;
+}
 
 
 
