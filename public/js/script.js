@@ -1,7 +1,6 @@
 
 var xhr = new XMLHttpRequest();
-var mPKey = "c3f554ea29d5a46ceb7c3b084bbd0514";
-var mPrKey = "b52d783b332612f511c4a721036c864a26d13ac9";
+
 
 
 var allowDrop = function(event) {
