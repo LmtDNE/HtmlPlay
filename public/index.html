@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML/CSS Playground</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="main"> 
+  <header>
+    <h1>Playground</h1>
+  </header>
+  <section class="first-fragment">
+    <aside class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Birth Date</th>
+            <th>Sign</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dion</td>
+            <td>March 12, 1980</td>
+            <td>Pisces</td>
+          </tr>
+          <tr>
+            <td>Deanna</td>
+            <td>February 28, 1968</td>
+            <td>Pisces</td>
+          </tr>
+          <tr>
+            <td>Rich</td>
+            <td>January 25, 1980</td>
+            <td>Aquarius</td>
+          </tr>
+          <tr>
+            <td>Kmac</td>
+            <td>October 03, 1980</td>
+            <td>Libra</td>
+          </tr>
+          <tr>
+            <td>Hugh</td>
+            <td>June 19, 1980</td>
+            <td>Gemini</td>
+          </tr>
+          <tr>
+            <td>Patrick</td>
+            <td>November 02, 1980</td>
+            <td>Scorpio</td>
+          </tr>
+          <tr>
+            <td>Colin</td>
+            <td>April 22, 1980</td>
+            <td>Taurus</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+    <article class="info-paragraph">
+      <h2>Content</h2>
+      <br>
+      <p>Meditation YOLO blue bottle pinterest readymade post-ironic, pitchfork trust fund occupy messenger bag master cleanse banjo leggings jean shorts wayfarers. Actually bushwick waistcoat cronut kale chips. Plaid flannel locavore, cold-pressed twee live-edge distillery. Single-origin coffee squid slow-carb, raclette pour-over food truck flexitarian scenester meh. Art party lomo raclette sriracha farm-to-table try-hard, beard heirloom offal. Pour-over locavore leggings XOXO, hot chicken humblebrag PBR&B selvage venmo shabby chic semiotics. Franzen normcore narwhal post-ironic.</p>
+      <br>
+      <p>Unicorn microdosing bespoke tacos typewriter, twee migas 3 wolf moon waistcoat vice farm-to-table fingerstache  dreamcatcher. Direct trade subway tile everyday carry, four loko mustache mlkshk la croix pug kale chips glossier chillwave venmo seitan live-edge. Lyft distillery tattooed irony. Cronut chambray tbh, drinking vinegar pitchfork deep v air plant YOLO authentic chicharrones keytar dreamcatcher banh mi venmo cray. Waistcoat pork belly aesthetic tumeric, selvage banh mi beard ugh. Pok pok hashtag vegan salvia. Meggings cray normcore hella, typewriter health goth austin butcher pork belly prism.</p>
+    </article>
+  </section>
+
+
+
+  <section class="second-fragment">
+    <header>
+      <h1> Dummy Form</h1>
+    </header>
+    <div class="fun-form">
+      <form>
+        <input id="first-name" type="text" placeholder="Enter Your First Name"></input>
+        <br>
+        <input id="last-name" type="text" placeholder="Enter Your Last Name"></input>
+        <br>
+        <input id="number" type="number" placeholder="Enter Your Favorite Number"></input>
+        <br>
+        <button id="click-me" >Click Me!</button>
+      </form>
+    </div>
+    </section>
+
+
+    <section class="third-fragment">
+      <header>
+        <h1>Link & List Fun</h1>
+      </header>
+      <div class="link-container">
+        <ul>
+          <li >
+            <a href="http://www.limit-dne.com" 
+              data-tooltip="true"
+              title="My Web Portfolio">Portfolio</a>
+          </li>
+          <li >
+            <a href="https://www.linkedin.com/in/dionfulwood85"
+              data-tooltip="true"
+              title="My LinkedIn Profile">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Limit_DNE"
+            data-tooltip="true"
+            title="My Hilarious twitter">Twitter</a>
+          </li>
+          <li>
+            <a href="https://github.com/LmtDNE" 
+            data-tooltip="true"
+            title="My Github profile">Github</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/dion.fulwood"
+            data-tooltip="true"
+            title="My Facebook profile">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="fourth-fragment">
+      <header>
+        <h1>Video and File Fun</h1>
+      </header>
+      <video width="848" height="360" controls poster="styles/assets/images/civilwar-800.jpg">
+        <source src="styles/assets/captainamericacivilwar-tlr1_h480p_CLIPCHAMP_keep.mp4" type="video/mp4">
+      </video>
+    </section>
+
+
+    <section class="fifth-fragment">
+      <header>
+        <h1>Load And View Files</h1>
+      </header>
+        <h2>Select an Image</h2>
+        <input type="file" id="selected-image">
+        <div id="preview">
+          
+        </div>
+
+        <h2>Select a Video</h2>
+        <input type="file" id="selected-video">
+
+    </section>
+
+
+    <section class="sixth-fragment">
+      <header>
+        <h1>API FUN</h1>
+      </header>
+      <form id="search-container" onsubmit="searchInput(event)">
+        <input type="search" id="search" placeholder="Search! 😎">
+        <input type="submit" id="submit" value="Search">
+      </form>
+
+      <div id="thumb-container"></div>
+      <p id="description-container"></p>
+      
+    </section>
+
+
+    <section class="seventh-fragment">
+      <header>
+        <h1>Buttons</h1>
+      </header>
+    </section>
+
+
+    <section class="eighth-fragment">
+      <header>
+        <h1>Progress Bar</h1>
+      </header>
+      <div class="progress-container">
+        <ul class="progress-bar">
+          <li class="active">Step 1</li>
+          <li>Step 2</li>
+          <li>Step 3</li>
+        </ul>
+      </div>
+      <div class="progress-container">
+          <div class="bar">
+            <span class="bar-fill"></span>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="ninth-fragment">
+      <header>
+        <h1>Drag and Drop</h1>
+      </header>
+      <aside class="img-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="styles/assets/images/programmer-meme.jpg" dragabble="true" id="image1" ondragstart="drag(event)" />
+      <img src="styles/assets/images/10ox8o.jpg" dragabble="true" id="image2" ondragstart="drag(event)" />
+      <img src="styles/assets/images/35btzy.jpg" dragabble="true" id="image3" ondragstart="drag(event)" />
+      <img src="styles/assets/images/states-of-a-programmer.png" dragabble="true" id="image4" ondragstart="drag(event)" />
+      <img src="styles/assets/images/fe13d95fd6d75d2ba275b55bcbfe5dd2_400x400.jpeg" dragabble="true" id="image5" ondragstart="drag(event)" />
+      </aside>
+      <div class="main-container">
+        <div id="img-container1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="img-container2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="img-container3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </section>
+
+
+  </div>
+</div>
+
+
+ <script src="js/script.js"></script>
+</body>
+</html>

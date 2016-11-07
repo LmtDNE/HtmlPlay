@@ -1,0 +1,455 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=====================================================================================================================================*/
+
+/*STYLING*/
+
+/*=====================================================================================================================================*/
+
+:root {
+  font-size: 35px; 
+}
+body {
+  background: radial-gradient(#22A9D3,#187694,#0C3947) ;
+  height: 100vh;
+}
+div.main {
+  position: relative;
+  font-size: .75rem;
+}
+
+section.first-fragment {
+  height: 400px;
+  width: 100%;
+}
+
+header{
+  height: 125px;
+  width: 100%;
+  background: white;
+  line-height: 150px;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  border-bottom: 5px solid orange;
+}
+
+header h1 {
+  margin-top: 0px;
+}
+
+aside.table-container {
+  float: left;
+  margin-left: 20px;
+
+}
+
+table {
+  text-align: center;
+  background-color: white;
+}
+
+table thead {
+  font-size: 1rem;
+  font-style: underline;
+  font-weight: bold;
+}
+
+table, th, td{
+  padding: 15px;
+  border: 1px solid blue;
+}
+table td {
+  font-size: .70rem;
+}
+
+article.info-paragraph {
+  float: right;
+  width: 50%;
+  height: 420px;
+  background-color: white;
+  padding: 15px;
+  margin-right: 20px;
+  border: 1px solid blue;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+article p {
+  font-size: .5rem;
+}
+/*=====================================================================================================================================*/
+
+/*DUMMY FORM*/
+
+/*=====================================================================================================================================*/
+
+section.second-fragment {
+  display: block;
+  width: 100%;
+  border-top: 5px solid orange;
+  margin-top: 100px;
+}
+div.fun-form{
+  text-align: center;
+  margin-bottom: 50px;
+}
+input#first-name, input#last-name, input#number{
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button#click-me{
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+
+}
+/*=====================================================================================================================================*/
+
+/*LINK AND LIST FORM*/
+
+/*=====================================================================================================================================*/
+
+section.third-fragment {
+  display: block;
+  width: 100%;
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+div.link-container {
+  margin-bottom: 50px;
+}
+
+li [data-tooltip="true"]:hover{
+  position: relative;
+  z-index: 1
+}
+
+li [data-tooltip="true"]:hover:before{
+  content: attr(title);
+  position: absolute;
+  background-color: orange;
+  color: white;
+  top: 1rem;
+  width: 10rem;
+  border-radius: 20px;
+  padding: 5px 10px;
+
+}
+
+li [data-tooltip="true"]:hover:after{
+  content: "";
+  position: absolute;
+  height:0;
+  width: 0;
+  border: 20px solid transparent;
+  border-bottom-color: orange;
+  left: 10px;
+
+}
+/*=====================================================================================================================================*/
+
+/*VIDEO AND FILE FUN*/
+
+/*=====================================================================================================================================*/
+
+section.fourth-fragment {
+  display: block;
+  width: 100%;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+
+/*=====================================================================================================================================*/
+
+/*LOAD AND VIEW FILES*/
+
+/*=====================================================================================================================================*/
+section.fifth-fragment {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+
+/*=====================================================================================================================================*/
+
+/*API FUN*/
+
+/*=====================================================================================================================================*/
+
+section.sixth-fragment {
+  display: block;
+  width: 100%;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+
+#search-container{
+  background-color: orange;
+  background-image: linear-gradient(#FFBF7D,#FF9E44);
+  width: 500px;
+  height: 45px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFA500 #BF7C00 #7F5200;
+  border-radius: 45px;
+  margin: 35px auto;
+  padding: 8px 0px 0px 10px;
+  overflow: hidden;
+}
+
+#search, #submit {
+  float: left;
+  outline: none;
+}
+
+#search  {
+  padding: 8px 15px;
+  height: 35px;
+  width: 380px;
+  font: normal 13px 'trebuchet MS', arial, helvetica;
+  background: #f1f1f1;
+  border-radius: 50px 3px 3px 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+}
+input#search:placeholder-shown {
+  font-size: .5rem;
+  color: blue;
+}
+
+#submit {
+  background-color: #1E94B8;
+  background-image: linear-gradient(#3ED9FF, #1C8DB0);
+  border-width: 1px;
+  border-style: solid; 
+  border-color: #76D9FF #1B85A7 #12586F;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  height: 35px;
+  margin: 0 0 0 10px;
+  width: 90px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica;
+  color: #2A4E5B;
+  border-radius: 3px 50px 50px 3px;
+}
+
+#submit:hover {
+  background-image: linear-gradient(#1C8DB0, #3ED9FF);
+}
+
+
+/*=====================================================================================================================================*/
+
+/*BUTTONS*/
+
+/*=====================================================================================================================================*/
+
+section.seveth-fragment {
+  display: block;
+  width: 100%;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+
+/*=====================================================================================================================================*/
+
+/*PROGRESS BAR*/
+
+/*=====================================================================================================================================*/
+
+section.eigth-fragment {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  /*margin-top: 100px;*/
+}
+div.progress-container {
+  width: 100%
+}
+.progress-bar{
+  counter-reset: step;
+}
+.progress-bar li {
+  list-style-type: none;
+  float: left;
+  width: 33.3%;
+  position: relative;
+  text-align: center;
+}
+.progress-bar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  border: 1px solid orange;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  line-height: 30px;
+  background-color: white;
+}
+.progress-bar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: orange;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progress-bar li:first-child:after {
+  content: none;
+}
+
+li.active {
+  color: #DD1B8B;
+}
+
+li.active:before {
+  border-color: #DD1B8B;
+}
+
+.progress-bar li.active + li:after {
+  background-color: #DD1B8B;
+}
+
+div.bar {
+  position: relative;
+  width: 50%;
+  background-color: #EEE;
+  border-radius: 10px;
+  box-shadow:inset 0px 1px 5px;
+  padding: 5px;
+  margin: 175px auto 10px auto;
+
+}
+span.bar-fill {
+  height: 30px;
+  display: block;
+  border-radius: 10px;
+  width: 45%;
+  background: orange;
+
+  -webkit-transition: width 0.8s ease;
+  transition: width 0.8s ease;
+}
+
+/*=====================================================================================================================================*/
+
+/*DRAG AND DROP*/
+
+/*=====================================================================================================================================*/
+
+
+section.ninth-fragment {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 700px;
+  border-bottom: 5px solid orange;
+  /*text-align: center;*/
+  /*margin-top: 100px;*/
+}
+aside.img-list {
+  position: absolute;
+  float: left;
+  width: 275px;
+  height: 560px;
+  top: 130px;
+  border-right: 5px solid orange;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 10px; 
+  overflow: scroll;
+}
+
+div.main-container {
+  float: right;
+  margin-right: 75px;
+}
+
+div #img-container1, div #img-container2, div #img-container3 {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border: 5px solid orange;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+img {
+  height: 250px;
+  width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
