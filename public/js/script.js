@@ -28,7 +28,7 @@ var searchInput = function (event) {
     
     if(xhr.readyState === 4  && xhr.status === 200) {
       var response = JSON.parse(xhr.responseText);
-      // console.log(response.data.results[0].thumbnail);
+      console.log(response);
       display(response.data.results[0].thumbnail.path, response.data.results[0].description)
     }
   }
@@ -37,7 +37,7 @@ var searchInput = function (event) {
 var display = function(thumbUrl, descUrl) {
   var containerImg = document.getElementById('thumb-container');
   var containerP = document.getElementById('description-container');
-
+ 
   var thumb = document.createElement('img');
   thumb.src = thumbUrl + ".jpg";
   containerImg.appendChild(thumb);
